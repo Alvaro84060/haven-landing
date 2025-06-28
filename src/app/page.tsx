@@ -29,10 +29,10 @@ export default function Home() {
         <p className="mt-6 text-neutral-700 leading-relaxed">
           En <strong>Haven Concierge</strong>, combinamos elegancia, detalle y
           eficiencia para ofrecer una experiencia sin preocupaciones a los
-          anfitriones y huéspedes de propiedades vacacionales. Nos especializamos
-          en <strong>limpieza de alto nivel</strong>, abastecimiento de
-          amenities, preparación antes del check-in, y coordinación de todo lo
-          necesario para lograr reseñas de 5 estrellas.
+          anfitriones y huéspedes de propiedades vacacionales. Nos
+          especializamos en <strong>limpieza de alto nivel</strong>,
+          abastecimiento de amenities, preparación antes del check-in, y
+          coordinación de todo lo necesario para lograr reseñas de 5 estrellas.
         </p>
       </section>
     </main>
