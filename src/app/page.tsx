@@ -1,71 +1,26 @@
-'use client';
-
-import Head from 'next/head';
-import * as React from 'react';
-import '@/lib/env';
-
-import ArrowLink from '@/components/links/ArrowLink';
-import ButtonLink from '@/components/links/ButtonLink';
-import UnderlineLink from '@/components/links/UnderlineLink';
-import UnstyledLink from '@/components/links/UnstyledLink';
-
-/**
- * SVGR Support
- * Caveat: No React Props Type.
- *
- * You can override the next-env if the type is important to you
- * @see https://stackoverflow.com/questions/68103844/how-to-override-next-js-svg-module-declaration
- */
-import Logo from '~/svg/Logo.svg';
-
-// !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
-// Before you begin editing, follow all comments with `STARTERCONF`,
-// to customize the default configuration.
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <main>
-      <Head>
-        <title>Hi</title>
-      </Head>
-      <section className='bg-white'>
-        <div className='layout relative flex min-h-screen flex-col items-center justify-center py-12 text-center'>
-          <Logo className='w-16' />
-          <h1 className='mt-4'>Next.js + Tailwind CSS + TypeScript Starter</h1>
-          <p className='mt-2 text-sm text-gray-800'>
-            A starter for Next.js, Tailwind CSS, and TypeScript with Absolute
-            Import, Seo, Link component, pre-configured with Husky{' '}
-          </p>
-          <p className='mt-2 text-sm text-gray-700'>
-            <ArrowLink href='https://github.com/theodorusclarence/ts-nextjs-tailwind-starter'>
-              See the repository
-            </ArrowLink>
-          </p>
+    <main className="bg-white text-neutral-900 min-h-screen font-sans">
+      <section className="flex flex-col items-center justify-center text-center px-6 py-32 bg-gradient-to-b from-white to-neutral-100">
+        <h1 className="text-5xl md:text-6xl font-semibold tracking-tight text-black">
+          Haven Concierge
+        </h1>
+        <p className="mt-4 text-lg md:text-xl text-neutral-600 max-w-xl">
+          Servicios de limpieza premium y atención integral para propiedades tipo Airbnb en Gold Coast.
+        </p>
+        <a
+          href="#contacto"
+          className="mt-8 inline-block bg-black text-white px-6 py-3 rounded hover:bg-neutral-800 transition"
+        >
+          Contactanos
+        </a>
+      </section>
 
-          <ButtonLink className='mt-6' href='/components' variant='light'>
-            See all components
-          </ButtonLink>
-
-          <UnstyledLink
-            href='https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Ftheodorusclarence%2Fts-nextjs-tailwind-starter'
-            className='mt-4'
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              width='92'
-              height='32'
-              src='https://vercel.com/button'
-              alt='Deploy with Vercel'
-            />
-          </UnstyledLink>
-
-          <footer className='absolute bottom-2 text-gray-700'>
-            © {new Date().getFullYear()} By{' '}
-            <UnderlineLink href='https://theodorusclarence.com?ref=tsnextstarter'>
-              Theodorus Clarence
-            </UnderlineLink>
-          </footer>
-        </div>
+      <section className="px-6 py-20 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-semibold text-black">¿Quiénes somos?</h2>
+        <p className="mt-6 text-neutral-700 leading-relaxed">
+          En <strong>Haven Concierge</strong>, combinamos elegancia, detalle y eficiencia para ofrecer una experiencia sin preocupaciones a los anfitriones y huéspedes de propiedades vacacionales. Nos especializamos en <strong>limpieza de alto nivel</strong>, abastecimiento de amenities, preparación antes del check-in, y coordinación de todo lo necesario para lograr reseñas de 5 estrellas.
+        </p>
       </section>
     </main>
   );
